@@ -85,7 +85,7 @@ const FibCalculator = () => {
             targetPrice:
                 Number(currentPriceValue) +
                 (Number(resistancePriceValue) - Number(currentPriceValue)) *
-                    (1 - 0.7),
+                    (1 - 0.786),
         },
         {
             key: '8',
@@ -101,69 +101,74 @@ const FibCalculator = () => {
         {
             key: '1',
             fibSequence: '1(开仓价)',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 1),
         },
         {
             key: '2',
             fibSequence: '0.786',
-            targetPrice: 42,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0.786),
         },
         {
             key: '3',
             fibSequence: '0.65',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0.65),
         },
         {
             key: '4',
             fibSequence: '0.618',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0.618),
         },
         {
             key: '5',
             fibSequence: '0.5',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0.5),
         },
         {
             key: '6',
             fibSequence: '0.382',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0.382),
         },
         {
             key: '7',
             fibSequence: '0.236',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0.236),
         },
         {
             key: '8',
             fibSequence: '0(支撑价)',
-            targetPrice: 32,
+            targetPrice:
+                Number(currentPriceValue) -
+                (Number(currentPriceValue) - Number(supportPriceValue)) *
+                    (1 - 0),
         },
     ]
 
     return (
-        <div>
+        <div className="w-full">
             <h1 className="text-3xl font-bold underline">斐波那契计算器</h1>
             <div>
                 <form className="w-full max-w-sm">
-                    <div className="md:flex md:items-center mb-6">
-                        <div className="md:w-1/3">
-                            <label
-                                className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                                htmlFor="inline-full-name"
-                            >
-                                阻力价格
-                            </label>
-                        </div>
-                        <div className="md:w-2/3">
-                            <input
-                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                id="inline-full-name"
-                                type="number"
-                                value={resistancePriceValue}
-                                onChange={changeResistancePrice}
-                            />
-                        </div>
-                    </div>
                     <div className="md:flex md:items-center mb-6">
                         <div className="md:w-1/3">
                             <label
@@ -189,6 +194,25 @@ const FibCalculator = () => {
                                 className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
                                 htmlFor="inline-full-name"
                             >
+                                阻力价格
+                            </label>
+                        </div>
+                        <div className="md:w-2/3">
+                            <input
+                                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                                id="inline-full-name"
+                                type="number"
+                                value={resistancePriceValue}
+                                onChange={changeResistancePrice}
+                            />
+                        </div>
+                    </div>
+                    <div className="md:flex md:items-center mb-6">
+                        <div className="md:w-1/3">
+                            <label
+                                className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                htmlFor="inline-full-name"
+                            >
                                 支撑价格
                             </label>
                         </div>
@@ -205,14 +229,14 @@ const FibCalculator = () => {
                 </form>
             </div>
             <div className="flex flex-row">
-                <div>
+                <div className="w-1/2">
                     <ShowTable
                         columns={columns}
                         dataSource={takeProfitDataSource}
                         title={'阻力价~开仓价'}
                     />
                 </div>
-                <div>
+                <div className="w-1/2">
                     <ShowTable
                         columns={columns}
                         dataSource={stopLossDataSource}
