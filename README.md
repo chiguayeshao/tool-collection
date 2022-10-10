@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# 斐波那契计算器
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 效果展示
 
-## Available Scripts
+![image-20221010225813047](https://cdn.jsdelivr.net/gh/chiguayeshao/pic-bed/image-20221010225813047.png)
 
-In the project directory, you can run:
+## 意义？
 
-### `npm start`
+1. 在虚拟货币，股票等金融投资产品软件中，均有斐波那契回撤工具，我们只需要知道两点之间的价格，便可以计算出斐波那契回撤所对应的价格，实际操作中可以按照斐波那契回撤所对应的价格来进行开仓，平仓，止盈止损等操作。
+2. 量化交易软件中如果提供了斐波那契止盈止损，那么可以通过本计算器进行人工测试审核委托单是否开单准确。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 如何使用
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 配合支撑位阻力位策略使用
+2. 输入开仓价格，输入阻力价格，便可以计算出从开仓价到阻力价之间的斐波那契回撤
+3. 输入开仓价格，输入支撑价格，便可以计算出从开仓价到支撑价之间的斐波那契回撤
+4. 加密货币合约的做多便可以依据斐波那契回撤来设置止盈止损（前提：准确判断阻力位支撑位）
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Fibonacci calculator
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Achievement display
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image-20221010230433139](https://cdn.jsdelivr.net/gh/chiguayeshao/pic-bed/image-20221010230433139.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What's mean？
 
-### `npm run eject`
+1. In virtual currency, stocks and other financial investment product software, there are Fibonacci retracement tools. We only need to know the price between two points to calculate the price corresponding to the Fibonacci retracement. In actual operation, you can open a position, close a position, take profit and stop loss according to the price corresponding to the Fibonacci retracement.
+2. If the Fibonacci Take Profit and Stop Loss is provided in the quantitative trading software, you can manually test through this calculator to check whether the order is accurate.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to use?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Use with support and resistance strategies
+2. Enter the opening price, enter the resistance price, and you can calculate the Fibonacci retracement from the opening price to the resistance price 
+3. Enter the opening price, enter the support price, and you can calculate the Fibonacci retracement from the opening price to the support price
+4. If you are long in a cryptocurrency contract, you can set take profit and stop loss based on Fibonacci retracement (premise: accurately determine the resistance level and support level)
