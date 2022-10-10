@@ -228,15 +228,15 @@ const FibCalculator = () => {
                     </div>
                 </form>
             </div>
-            <div className="flex flex-row">
-                <div className="w-1/2">
+            <div className="flex flex-row justify-between">
+                <div className=" w-2/5">
                     <ShowTable
                         columns={columns}
                         dataSource={takeProfitDataSource}
                         title={'阻力价~开仓价'}
                     />
                 </div>
-                <div className="w-1/2">
+                <div className="w-2/5">
                     <ShowTable
                         columns={columns}
                         dataSource={stopLossDataSource}
