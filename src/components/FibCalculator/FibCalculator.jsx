@@ -30,20 +30,88 @@ const FibCalculator = () => {
             key: 'age',
         },
     ]
-    const dataSource = [
+    const takeProfitDataSource = [
         {
             key: '1',
-            name: 'John Brown',
+            name: '0(阻力价)',
             age: 32,
         },
         {
             key: '2',
-            name: 'Jim Green',
+            name: '0.236',
             age: 42,
         },
         {
             key: '3',
-            name: 'Joe Black',
+            name: '0.382',
+            age: 32,
+        },
+        {
+            key: '4',
+            name: '0.5',
+            age: 32,
+        },
+        {
+            key: '5',
+            name: '0.618',
+            age: 32,
+        },
+        {
+            key: '6',
+            name: '0.65',
+            age: 32,
+        },
+        {
+            key: '7',
+            name: '0.786',
+            age: 32,
+        },
+        {
+            key: '8',
+            name: '1(开仓价)',
+            age: 32,
+        },
+    ]
+
+    const stopLossDataSource = [
+        {
+            key: '1',
+            name: '1(开仓价)',
+            age: 32,
+        },
+        {
+            key: '2',
+            name: '0.786',
+            age: 42,
+        },
+        {
+            key: '3',
+            name: '0.65',
+            age: 32,
+        },
+        {
+            key: '4',
+            name: '0.618',
+            age: 32,
+        },
+        {
+            key: '5',
+            name: '0.5',
+            age: 32,
+        },
+        {
+            key: '6',
+            name: '0.382',
+            age: 32,
+        },
+        {
+            key: '7',
+            name: '0.236',
+            age: 32,
+        },
+        {
+            key: '8',
+            name: '0(支撑价)',
             age: 32,
         },
     ]
@@ -121,7 +189,16 @@ const FibCalculator = () => {
                     </div>
                 </div>
             </form>
-            <ShowTable columns={columns} dataSource={dataSource} />
+            <ShowTable
+                columns={columns}
+                dataSource={takeProfitDataSource}
+                title={'阻力价~开仓价'}
+            />
+            <ShowTable
+                columns={columns}
+                dataSource={stopLossDataSource}
+                title={'开仓价~支撑价'}
+            />
         </div>
     )
 }
