@@ -11,10 +11,11 @@
 
 ## 如何使用
 
-1. 配合支撑位阻力位策略使用
-2. 输入开仓价格，输入阻力价格，便可以计算出从开仓价到阻力价之间的斐波那契回撤
-3. 输入开仓价格，输入支撑价格，便可以计算出从开仓价到支撑价之间的斐波那契回撤
-4. 加密货币合约的做多便可以依据斐波那契回撤来设置止盈止损（前提：准确判断阻力位支撑位）
+1. `npm install & npm run start`
+2. 配合支撑位阻力位策略使用
+3. 输入开仓价格，输入阻力价格，便可以计算出从开仓价到阻力价之间的斐波那契回撤
+4. 输入开仓价格，输入支撑价格，便可以计算出从开仓价到支撑价之间的斐波那契回撤
+5. 加密货币合约的做多便可以依据斐波那契回撤来设置止盈止损（前提：准确判断阻力位支撑位）
 
 
 
@@ -33,7 +34,8 @@
 
 ## How to use?
 
-1. Use with support and resistance strategies
-2. Enter the opening price, enter the resistance price, and you can calculate the Fibonacci retracement from the opening price to the resistance price 
-3. Enter the opening price, enter the support price, and you can calculate the Fibonacci retracement from the opening price to the support price
-4. If you are long in a cryptocurrency contract, you can set take profit and stop loss based on Fibonacci retracement (premise: accurately determine the resistance level and support level)
+1. `npm install & npm run start`
+2. Use with support and resistance strategies
+3. Enter the opening price, enter the resistance price, and you can calculate the Fibonacci retracement from the opening price to the resistance price 
+4. Enter the opening price, enter the support price, and you can calculate the Fibonacci retracement from the opening price to the support price
+5. If you are long in a cryptocurrency contract, you can set take profit and stop loss based on Fibonacci retracement (premise: accurately determine the resistance level and support level)
